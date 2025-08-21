@@ -55,9 +55,10 @@ values
 	(2233445, 1, 'mechanical', '98 inches', 2, 2500, 10, 1999,  'yes', 'windows', 1),
 	(78527845, 2, 'electronic', '100 inches', 1, 3000, 45, 2000, 'yes', 'mec', 3);
 
-insert into televisios(catalog_number, brand_id, model, scream_size, resolution_id, price, stock_quantity, smart_tv, os, panel_tv_id)
+insert into televisios(catalog_number, brand_id, model, screen_size, resolution_id, price, stock_quantity, release_year, smart_tv, os, panel_tv_id)
 values
-	(676576, 1, 'mechanical', '98 inches', 2, 2500, 10, 2020, 'no',null,  'windows', 1);
+	(676576, 1, 'mechanical', '98 inches', 2, 2500, 10, 2020, 'no',null, 1);
+
 
 
 
