@@ -18,10 +18,11 @@ tv_id serial primary key,
 catalog_number bigint not null,
 brand_id int not null,
 model text not null,
-scream_size text not null,
+screen_size text not null,
 resolution_id int not null,
 price integer not null,
 stock_quantity integer not null,
+release_year int not null,
 smart_tv text not null check (smart_tv in ('yes','no')),
 os text default null,
 panel_tv_id int not null,
@@ -49,14 +50,15 @@ values
 	('QLED'),
 	('LED');
 
-insert into televisios(catalog_number, brand_id, model, scream_size, resolution_id, price, stock_quantity, smart_tv, os, panel_tv_id)
+insert into televisios(catalog_number, brand_id, model, screen_size, resolution_id, price, stock_quantity, release_year, smart_tv, os, panel_tv_id)
 values
-	(2233445, 1, 'mechanical', '98 inches', 2, 2500, 10, 'yes', 'windows', 1),
-	(78527845, 2, 'electronic', '100 inches', 1, 3000, 45, 'yes', 'mec', 3);
+	(2233445, 1, 'mechanical', '98 inches', 2, 2500, 10, 1999,  'yes', 'windows', 1),
+	(78527845, 2, 'electronic', '100 inches', 1, 3000, 45, 2000, 'yes', 'mec', 3);
 
 insert into televisios(catalog_number, brand_id, model, scream_size, resolution_id, price, stock_quantity, smart_tv, os, panel_tv_id)
 values
-	(676576, 1, 'mechanical', '98 inches', 2, 2500, 10, 'no', 'windows', 1);
+	(676576, 1, 'mechanical', '98 inches', 2, 2500, 10, 2020, 'no',null,  'windows', 1);
+
 
 
 
